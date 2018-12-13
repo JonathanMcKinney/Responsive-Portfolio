@@ -13,7 +13,7 @@ body {
     margin: 0 auto;
 }
 
-.heading {
+.heading, .heading1 {
     font-size: 32px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -152,4 +152,116 @@ img.projectPic {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: lighter;
+}
+
+@media screen and (max-width: 980px) {
+    body {
+        width: 980px;
+        margin: 0 auto;
+    }
+
+    nav {
+        right: 80px;
+    }
+
+    .main {
+        width: 900px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        width: 760px;
+        margin: 0 auto;
+    }
+
+    nav {
+        right: 280px;
+    }
+
+    .heading1 {
+        left: -25px;
+    }
+
+    .main {
+        width: 700px;
+        margin-left: 15px;
+    }
+
+    img.bio {
+        width: 250px;
+        height: 250px;
+    }
+
+    .project {
+        margin: 20px;
+        height: 200px;
+    }
+ 
+    img.projectPic {
+     width: 200px;
+     height: 200px;
+     left: 4%;
+     padding: 10px;
+    }
+ 
+    .project-banner {
+     width: 180px;
+     left: 8.5%;
+     
+     }
+
+}
+
+@media screen and (max-width: 640px) {
+
+    header {
+        background: #4aaaa5;
+        padding-bottom: 60px;
+        margin: auto;
+        
+    }
+
+    h1 {
+        left: 10%;
+    }
+
+    nav {
+        width: 640px;
+        position: relative;
+        bottom: -50px;
+        left: -50px;
+        color: #4aaaa5;
+        background: #fff;
+        padding: 20px 180px 20px 180px;
+        margin: auto;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        font-weight: bolder;
+
+    }
+
+    .main {
+        width: 580px;
+        
+        font-size: .9rem;
+        margin: 155px 10px 100px 10px;
+        }
+
+   .project {
+       margin: 20px;
+       height: 150px;
+   }
+
+   img.projectPic {
+    width: 150px;
+    height: 150px;
+    left: 8.5%;
+   }
+
+   .project-banner {
+    width: 150px;
+    left: 8.5%;
+    }
 }
